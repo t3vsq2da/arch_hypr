@@ -1,3 +1,6 @@
+set -x
+#update
+sudo pacman --noconfirm -Syu
 #hypr
 sudo pacman --noconfirm -S hyprland wayland-protocols nvidia noto-fonts
 #git
@@ -14,7 +17,8 @@ sudo pacman -S --noconfirm ydotool xorg-xinput
 #js
 sudo pacman -S --noconfirm nodejs npm
 #apps
-sudo pacman -S --noconfitm kitty pavucontrol
-yay -S google-chrome
-
+sudo pacman -S --noconfitm kitty pavucontrol telegram-desktop
+yay --noconfirm -S google-chrome chromedriver
+#mb
+sudo pacman -S --noconfirm go
 
